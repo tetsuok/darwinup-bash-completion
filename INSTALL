@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [[ $HOME/.bashrc ]]; then
+  echo "source $PWD/darwinup_completion.bash" >> $HOME/.bashrc
+else
+  echo "no such file or directory: $HOME/.bashrc"
+  exit 1
+fi
